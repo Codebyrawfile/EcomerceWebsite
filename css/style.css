@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800&display=swap');
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --primary-color: #dd4444;
+  --color-dark1: #000000;
+  --color-dark2: #7d8184;
+  --color-white: #ffffff;
+  --color-white2: #f5f5f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  /* 1 rem = 10px */
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  /* line-height: 1.5;
+  color: var(--tertiary-color); */
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark1);
+}
+
+ul {
+  list-style: none;
+}
+
+/* UTILITIES */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* TOP NAV */
+.top-nav {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--color-dark1);
+}
+
+.top-nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav-wrapper {
+  display: flex;
+  color: var(--color-white);
+}
+
+.top-nav-p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.top-nav-link{
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-white);
+  transition: 0.5s;
+}
+
+.top-nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* NAV BAR */
+.nav {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--color-dark2);
+}
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--color-dark1);
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 2rem;
+}
+
+.nav ul li a {
+  position: relative;
+  transition: 0.5s;
+}
+
+.nav ul li a::after {
+  content: ''; /* Create the line */
+  position: absolute;
+  bottom: -5px; /* Adjust this value to control the distance of the line from text */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color); /* Color of the line */
+  transform: scaleX(0); /* Initially set the line width to zero */
+  transform-origin: bottom left; /* Set the transformation origin to the bottom left corner */
+  transition: transform 0.3s; /* Smooth transition for line appearance */
+}
+
+.nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.nav ul li a:hover::after {
+  transform: scaleX(1); /* Expand the line width to 100% on hover */
+}
+
+.nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-form {
+  padding: 0.8rem;
+  background-color: var(--color-white2);
+}
+
+.nav-input {
+  padding: 0.4rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.nav .size {
+  font-size: 2rem;
+}
+
+.nav .nav-items i {
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.header-container {
+width: 100%;
+height: 346px;
+display: flex;
+margin-top: 4rem;
+}
+
+.header-filter {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 2px solid var(--color-dark1);
+}
+
+/* .header .right-col img {
+  width: 100%;
+} */
