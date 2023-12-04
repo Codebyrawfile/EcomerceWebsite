@@ -32,10 +32,70 @@ var x = setInterval(function() {
 // Slider
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 });
+
+//Animations 
+ScrollReveal().reveal('.top-nav', {
+  origin: 'bottom',
+  distance: '20px',
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  delay: 200,
+})
+
+ScrollReveal().reveal('.nav', {
+  origin: 'bottom',
+  distance: '20px',
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  delay: 200,
+})
+
+ScrollReveal().reveal('.header', {
+  origin: 'bottom',
+  distance: '20px',
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  delay: 200,
+})
+
+ScrollReveal().reveal('section', {
+  origin: 'bottom',
+  distance: '20px',
+  duration: 1000,
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  delay: 200,
+})
+
+ScrollReveal().reveal('footer', {
+  origin: 'bottom',
+  distance: '20px',
+  duration: 1000,
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  delay: 200,
+})
+
+// MOBILE NAV 
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.mobile-nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('mobile-nav-hide',);
+})
