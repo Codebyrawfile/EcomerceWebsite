@@ -242,9 +242,6 @@ ul {
   display: none;
 }
 
-.mobile-nav-list.open {
-  height: 100vh;
-}
 
 /* HERO SECTION */
 .header-container {
@@ -841,7 +838,9 @@ ul {
     font-size: 3rem;
     margin: 10px 0;
   }
+}
 
+@media (max-width: 977px) {
   .service-title {
     font-size: 1.3rem;
   }
@@ -849,7 +848,15 @@ ul {
   .services-container .service-title-p {
     font-size: 1rem;
   }
+
+  .services-container .service-img {
+    width: 50px;
+  }
 }
+
+
+
+
 
 
 @media (max-width: 725px) {
