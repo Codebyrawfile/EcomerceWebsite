@@ -60,27 +60,31 @@
   
   <!-- CART -->
   <section class="section">
-    <div class="container cart-container">
+    <div class="container">
       <div class="cart">
-        <div class="cart-header">
-          <p class="cart-header-title">Product</p>
-          <p class="cart-header-title">Price</p>
-          <p class="cart-header-title">Quantity</p>
-          <p class="cart-header-title">Subtotal</p>
+        <div class="cart_header">
+          <!-- <p class="cart_header_id">Product ID</p> -->
+          <p class="cart_header_title">Product Title</p>
+          <p class="cart_header_image">Product Image</p>
+          <p class="cart_header_price">Price</p>
+          <p class="cart_header_delete">Delete</p>
         </div>
-        <div class="cart-item">
-          <div class="cart-product">
-            <img src="images/cart/Gamepad.png" alt="" class="cart-img">
-            <span class="cart-item-title">H1 Gamepad</span>
+        <div class="cart-items">
+          <div class="cart_item">
+            <!-- <p class="cart_id">ID</p> -->
+            <img src="./images/items/item-1.png" alt="" class="cart_img" />
+              <p class="cart_title">Product Title</p>
+              
+              <p class="cart_price">$120</p>
+              <p class="cart_delete">Delete</p>
           </div>
-          <div class="cart-item-price">$550</div>
-          <input type="number" class="cart-item-qty">
-          <p class="cart-item-subtotal">$1100</p>
         </div>
-        <div class="cart-total">
-          <p class="cart-total-p">Total:</p>
-          <p class="cart-total-p">$2100</p>
+        <div class="cart_final">
+          <div class="cart_total"> Total: </div>
+          <p class="cart_total_p">$2000</p>
+     
         </div>
+        
       </div>
     </div>
   </section>
@@ -190,6 +194,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/cart.js"></script>
 </body>
 </html>

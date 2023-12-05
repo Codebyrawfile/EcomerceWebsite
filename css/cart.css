@@ -11,143 +11,17 @@
 
 }
 
-.cart-container {
-  margin-top: 7rem;
-}
 
-.cart {
-  width: 100%;
-}
-
-.cart-header {
-  margin-bottom: 3rem;
-  padding: 2rem;
-  background-color: var(--color-white);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  border-radius: 1px;
-  box-shadow: 2px 1px 5px 1px rgba(116, 113, 113, 0.144);
-}
-
-.cart-header p {
-  padding: 1rem;
-}
-
-.cart-item {
-  margin-bottom: 3rem;
-  padding: 2rem;
-  background-color: var(--color-white);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  border-radius: 1px;
-  box-shadow: 2px 1px 5px 1px rgba(116, 113, 113, 0.144);
-}
-
-.cart-item img,
-.cart-item-title,
-.cart-item-subtotal,
-  div,
-  input {
-  padding: 1rem;
-}
-
-.cart-item input {
-  outline: none;
-  width: 30%;
-  border: 2px solid var(--color-dark2);
-  border-radius: 5px;
-}
-
-
-
-.cart-product {
-  display: flex;
-  align-items: center;
-}
-
-.cart-img {
-  width: 80px;
-}
-
-/* .cart-total {
-  margin: 0 auto;
-  margin-top: 2rem;
-  text-align: right;
-  margin-right: 21rem;
-} */
-
-.cart-total {
-  padding: 1rem;
-  background-color: var(--color-white);
-  display: flex;
-  justify-content: space-around;
-  gap: 22rem;
-  border-radius: 1px;
-  box-shadow: 2px 1px 5px 1px rgba(116, 113, 113, 0.144);
-}
-
-.cart-total-p {
-  padding: 1rem;
-}
-
-
-
-@media (max-width: 1078px) {
-  .cart-img {
-    width: 40%;
-  }
-
-  .cart-item span {
+@media (max-width: 688px) {
+  .cart_header {
     font-size: 1.4rem;
   }
 
-  /* .cart-product {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  } */
-}
-
-
-@media (max-width: 968px) {
-  .cart-img {
-    width: 70px;
-  }
-
-  .cart-item span {
-    display: none;
-  }
-
-  .cart-item input {
-    width: 40%;
-  }
-}
-
-@media (max-width: 725px) {
-  .cart-item input {
-    width: 60%;
-  }
-}
-
-
-@media (max-width: 518px) {
-  .cart-header p,
-  .cart-item img,
-  .cart-item-title,
-  div,
-  input,
-  p {
-  font-size: 1.3rem;
-}
-
-.cart-item input {
-  width: 100%;
+  .cart_title,
+  .cart_price,
+  .cart_delete {
+  font-size: 1.2rem;
+  width: 50%;
 }
 
 }

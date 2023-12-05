@@ -99,3 +99,43 @@ const nav = document.querySelector('.mobile-nav');
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('mobile-nav-hide',);
 })
+
+
+// Add To Cart Button
+const AddToCart = document.querySelectorAll(".add_to_cart");
+
+AddToCart.forEach((button) => {
+  button.addEventListener("click", () => {
+    const id = button.getAttribute("data-id");
+    const title = button.getAttribute("data-title");
+    const image = button.getAttribute("data-image");
+    const price = button.getAttribute("data-price");
+
+    const cartItem = { id, title, image, price };
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(cartItem);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  });
+});
+
+
+
+// const AddToCart = document.querySelectorAll('.add-to-cart');
+
+// // Adding Loop to All Buttons
+// AddToCart.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     const id = button.getAttribute("data-id");
+//     const title = button.getAttribute("data-title");
+//     const image = button.getAttribute("data-image");
+//     const price = button.getAttribute("data-price");
+
+
+//     // Saving them inside an Object 
+//     const cartItem = { id, title, image, price };
+//     // Saving them inside Local Storage
+//     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+//     cart.push(cartItem);
+//     localStorage.setItem("cart", JSON.stringify(cart));
+//   });
+// });
