@@ -1,0 +1,46 @@
+/* UTILITIES */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 10px 15px;
+  color: var(--color-white);
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary);
+  color: var(--color-dark1);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* STAR PROPERTIES */
+.w-6 {
+  width: 2rem;
+  height: 2rem;
+}
+.h-6 {
+  fill: var(--star-color);
+}
